@@ -1,0 +1,8 @@
+// "hello world"と表示
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("hello world")
+}

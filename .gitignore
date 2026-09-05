@@ -1,0 +1,24 @@
+# ビルド成果物（出力先として使っている場合）
+**/bin/
+**/dist/
+**/build/
+
+# テスト用バイナリ・カバレッジ・プロファイル
+**/*.test
+**/coverage.out
+**/coverage.html
+**/coverage/
+**/cpu.prof
+**/mem.prof
+
+# ローカル環境設定・秘密情報
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OSが生成するファイル
+**/.DS_Store
+**/Thumbs.db
+
+.idea/
