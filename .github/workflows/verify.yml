@@ -8,7 +8,7 @@ on:
 jobs:
   verify:
     name: ${{ vars.JOB_NAME }}
-    if: ${{ vars.EXECUTE_JOB == 'true' }}
+    if: ${{ vars.EXEC_WF == 'true' }}
     runs-on: ubuntu-latest
 
     steps:
