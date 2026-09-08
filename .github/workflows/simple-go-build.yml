@@ -22,3 +22,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install nginx -y
+  report-url:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
