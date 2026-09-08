@@ -29,6 +29,6 @@ jobs:
   report-os:
     runs-on: ubuntu-latest
     steps:
-      - name: chacke-os
+      - name: chack-os
         if: runner.os != 'Windows'
-        run: echo ${runner.os}
+        run: echo ${{ runner.os }}
