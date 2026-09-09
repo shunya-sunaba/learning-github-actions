@@ -14,14 +14,14 @@ on:
         required: true
         type: string
 
-    workflow_dispatch:
-      inputs:
-        title:
-          description: 'issue title'
-          required: true
-        body:
-          description: 'issue body'
-          required: true
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'issue title'
+        required: true
+      body:
+        description: 'issue body'
+        required: true
 
 jobs:
   create-issue_on_failure:
