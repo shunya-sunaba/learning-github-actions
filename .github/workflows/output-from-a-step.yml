@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: set debug
         id: set-debug-stage
-        run: eho "BUILD_STAGE=debug" >> $GITHUB_OUTPUT
+        run: echo "BUILD_STAGE=debug" >> $GITHUB_OUTPUT
 
       - name: get stage
         run: echo "the build stage is ${{ steps.set-debug-stage.outputs.BUILD_STAGE }}"
