@@ -1,0 +1,17 @@
+name: output-from-a-step.yml
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set debug
+        id: set-debug-stage
+        run: eho "BUILD_STAGE=debug" >> $GITHUB_OUTPUT
+
+      - name: get stage
+        run: echo "the build stage is ${{ steps.set-debug-stage.outputs.BUILD_STAGE }}"

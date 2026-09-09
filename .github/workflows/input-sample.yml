@@ -1,7 +1,7 @@
 name: input-sample.yml
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
