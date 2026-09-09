@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      build-stage: ${{ steps.set-debug-state.outputs.BUILD_STAGE }}
+      build-stage: ${{ steps.set-debug-stage.outputs.BUILD_STAGE }}
 
     steps:
       - name: set debug
