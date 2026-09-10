@@ -3,7 +3,7 @@ name: issue.yml
 on:
   issues:
     types:
-      - opened
+      - [opened, edited, closed]
 
 jobs:
   notify-for-issue:
