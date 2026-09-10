@@ -1,0 +1,11 @@
+name: issue.yml
+
+on:
+  issues:
+
+jobs:
+  notify-for-issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "something happened with an issue"
