@@ -2,10 +2,12 @@ name: issue.yml
 
 on:
   issues:
+    types:
+      - opened
 
 jobs:
   notify-for-issue:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "something happened with an issue"
+      - run: echo "an issue was opened"
